@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!-- Mirrored from ayu.dev/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Apr 2022 03:17:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta name="generator" content="Hugo 0.96.0" />
+    <title>sllag@sllag:~$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="" />
+    <style>
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&amp;display=swap");
+:root {
+  --cursor-visibility: hidden; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  font-family: "Inconsolata", monospace;
+  font-size: 4vmin;
+  line-height: 4.1vmin;
+  font-weight: normal; }
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+#content {
+  min-width: 82vmin;
+  min-height: 82vmin; }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: inset 0 0 1px white; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px white; }
+
+.cursor, #ps1_01:after, #cd:after, #ps1_02:after, #cat:after, #std_out_01:after, #ps1_03:after, #std_out_02:after, #ps1_04:after {
+  visibility: var(--cursor-visibility);
+  content: "▌";
+  overflow: hidden;
+  color: white;
+  animation: blink 500ms linear infinite alternate; }
+
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.9; } }
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 2.5vmin;
+    line-height: 2.6vmin; }
+  #content {
+    min-width: 60vmin; } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+body{background:#1E282C}body #terminal{color:#657B83}body #user{color:#C3E88D}body #dir{color:#80CBC3}body .Typewriter__cursor{color:#657B83}a{color:#657B83}
+
+        
+.navFull {
+    background-color: #353535;
+    font-family: "Courier New";
+    font-size: 17px;
+    display: inline;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding-top: 5px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navCredits {
+    float: right;
+    padding-right: 18px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+#content::after {
+    content: "\a\a";
+    white-space: pre;
+}
+        
+        
+</style>
+
+
+
+</head><body><div id="content">
+    
+    
+
+    
+    
+
+    
+    
+        
+        
+            
+            
+        
+    
+    
+
+    
+    
+    
+    
+    
+        
+            
+            
+
+            
+            
+            
+                
+            
+            
+            
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+        
+            
+            
+
+            
+            
+            
+                
+            
+            
+            
+            
+            
+        
+    
+
+    
+
+    
+
+    
+    
+    
+
+    <span id="ps1_01"></span> <span id="cd"></span> <br>
+<span id="ps1_02"></span> <span id="cat"></span> <br>
+<span id="std_out_01"></span> <br>
+<span id="ps1_03"></span> <span id="tree"></span> <br>
+<span id="std_out_02"></span> <br>
+<span id="ps1_04"></span>
+
+<script type="text/javascript">
+    async function typewriter(text, elementId, waitAfter, collapse_after=true) {
+        var n = 0,
+            isTag = false
+        addText = "";
+        const el = document.getElementById(elementId);
+
+        const wait = () => new Promise(r => setTimeout(r, waitAfter));
+        const nowait = () => new Promise(r => r());
+
+        const render = () => el.innerHTML = (text.slice(0, n + 1) + addText);
+
+        const cursor = document.createElement('span');
+        cursor.id = "blink";
+
+        el.style.setProperty("margin-right", "-10px");
+        el.style.setProperty("--cursor-visibility", "visible");
+        while (n < text.length) {
+            if (text.charAt(n + 1) === "<") isTag = true;
+            if (text.charAt(n + 1) === ">") isTag = false;
+
+            if (isTag) {
+                n++;
+                continue;
+            }
+
+            requestAnimationFrame(render);
+
+            if (waitAfter === 0) {
+                await nowait();
+            } else {
+                await wait();
+            }
+
+            n++;
+        }
+        if (collapse_after) {
+            el.style.setProperty("--cursor-visibility", "collapse");
+        }
+    }
+
+    function parseDelay(d) {
+        const parsed = parseInt(d, 10);
+        if (isNaN(parsed)) return 0;
+        return parsed;
+    }
+
+    const ps1Delay = parseDelay("15"),
+        stdoutDelay = parseDelay("15"),
+        commandDelay = parseDelay("15");
+    const typeeffetct = async () => {
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003esllag@sllag\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_01", ps1Delay); 
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003ecd tea\u003c\/span\u003e", "cd", commandDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003esllag@sllag\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/tea\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_02", ps1Delay); 
+        await typewriter("\u003cspan id=terminal\u003ecat about.txt\u003c\/span\u003e", "cat", commandDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cbr\u003e\n      Hiyu, I\u0026rsquo;m sllag!\u003cbr\u003e\n          🌧️\u003cbr\u003e\n         \u003cem\u003ero\/ck\u003c\/em\u003e\u003cbr\u003e\n\u003cbr\u003e\n  I like to program \u003cdel\u003esometimes\u003c\/del\u003e :3\u003c\/p\u003e\n\u003c\/span\u003e", "std_out_01", stdoutDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003esllag@sllag\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/tea\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_03", ps1Delay); 
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003etree .\/leafs\/\u003c\/span\u003e", "tree", commandDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cstrong\u003e\u003cspan id=\u0027dir\u0027\u003e.\/leafs\/\u003c\/span\u003e\u003c\/strong\u003e\u003cbr\u003e├── \u003ca href=\u0027http:\/\/youtube.com/sllag\/\/\u0027\u003eYouTube\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027https:\/\/github.com\/sllag\u0027\u003eGitHub\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e└── \u003ca href=\u0027http:\/\/sllag.carrd.co\/\/\u0027\u003eCarrd\u003c\/a\u003e\u003c\/span\u003e", "std_out_02", stdoutDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003esllag@sllag\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/tea\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e ", "ps1_04", ps1Delay, false);
+        return;
+    }
+
+    typeeffetct()
+</script>
+
+
+        </div>
+        
+        
+        
+         
+    </body>
+
+<!-- Mirrored from ayu.dev/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Apr 2022 03:17:00 GMT -->
+</html>
